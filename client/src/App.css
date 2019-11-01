@@ -1,33 +1,42 @@
-.App {
-    text-align: center;
+* {
+    font-family: 'PT Serif', serif;
+  }
+  body {
+    color: black;
+    background-color: white;
+  }
+  button {
+    border: 3px solid black;
+    background-color: orange;
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
   }
   
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
+  .cardcontainer {
+    width: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .card{
+    width: 40%; /* This covers the people with long names */
+    margin: 2%;
+    padding: 1%;
+    border: 3px solid orange;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px 3px black; /* Match 3px to border cover */
+  }
+  
+  .dark-mode {
     color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+    background-color: black;
+    box-shadow: 3px 3px 5px 3px grey; /* Forgot how to inherit traits */
   }
